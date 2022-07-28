@@ -16,6 +16,8 @@
     --font-titles: 'Neue Haas Grotesk Text Pro', sans-serif;
     --google-thin:'Product Sans';
     --google-bold:'Product Sans Medium';
+    --btn-send-hover: #f082ac;
+    --btn-send: #ea4c89;
     
 
 
@@ -46,6 +48,8 @@ section{
 }
 
 .dribbble-sidebar{
+    display: flex;
+    flex-direction: column;
     background: var(--pink);
     flex: 0 1 38%;
     height: 100vh;
@@ -79,7 +83,10 @@ section{
     max-width: 25rem;
     margin: 0 auto;
 }
-.container .google-sign h3{
+.google-sign{
+    margin-bottom: 10%;
+}
+.google-sign h3{
     font-size: 1.5rem;
     font-family: 'Neue Haas Grotesk Text Pro';
     color: var(--black);
@@ -133,4 +140,45 @@ section{
 }
 .twitter-btn picture img{
     width: 30%;
+}
+.dividers{
+    display: flex;
+    margin-bottom: 5%;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+label span{
+    color: var(--black);
+    font-family: var(--font-titles);
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 1%;
+    letter-spacing: 0.02rem
+}
+input[type="text"], input[type="password"]{
+    display: block;
+    border: none;
+    background: #f3f3f4;
+    width: 100%;
+    padding: 3%;
+    margin-top: 3%;
+    border-radius: 8px;
+}
+.password label a{
+    position: relative;
+    left: 52%;
+    font-family: var(--font-titles);
+    font-size: 0.9rem;
+}
+.submit-btn{
+    border: none;
+    width: 13rem;
+    padding: 3%;
+    border-radius: 8px;
+    background: var(--btn-send);
+    color: white;
+    font-family: var(--font-titles);
 }
