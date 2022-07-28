@@ -1,0 +1,136 @@
+@import url('http://fonts.cdnfonts.com/css/neue-haas-grotesk-text-pro?styles=16509,16511');
+@import url('http://fonts.cdnfonts.com/css/google-sans?styles=20575,20577,20583');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /**/
+    --pink : #f1cdd7;
+    --color-font-sidebar: #865c6c;
+    --blue-google: #1a73e8;
+    --blue-google-hover: #5195ed;
+    --btn-sign: ##ea4c89;
+    --btn-sign-hover: #;
+    --black: #0d0c22;
+    --font-titles: 'Neue Haas Grotesk Text Pro', sans-serif;
+    --google-thin:'Product Sans';
+    --google-bold:'Product Sans Medium';
+    
+
+
+}
+a{
+    color: #4f3cc9;
+    text-decoration: none;
+}
+
+h1{
+    font-family: var(--font-titles) ;
+    font-size: 1.6rem;
+    color: var(--color-font-sidebar);
+    line-height: 1.8rem;
+}
+p{
+    font-family: var(--font-titles) ;
+    font-size: 0.9rem;   
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dribbble-sidebar{
+    background: var(--pink);
+    flex: 0 1 38%;
+    height: 100vh;
+}
+.brand{
+    margin: 0 auto;
+    padding: 13% 12%;
+}
+.brand img{
+    width: 6rem;
+    margin-bottom: 6%;
+}
+.image{
+    background-image: url('../img/sign-in-img.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 75vh;
+}
+.dribbble-form{
+    flex: 0 1 62%
+}
+.dribbble-form .login{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 4%;
+    padding-right: 2%;
+}
+.container{
+    width: 100%;
+    max-width: 25rem;
+    margin: 0 auto;
+}
+.container .google-sign h3{
+    font-size: 1.5rem;
+    font-family: 'Neue Haas Grotesk Text Pro';
+    color: var(--black);
+    margin-top: 24%;
+    margin-bottom: 7%;
+}
+.google-sign .sign-btns{
+    display: flex;
+}
+.google-btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7%;
+    border: none;
+    padding: 0.5%;
+    background: var(--blue-google);
+    color: white;
+    width: 15.6rem;
+    border-radius: 5px;
+}
+.google-btn span{
+    font-family: var(--google-bold);
+    font-size: 0.9rem;
+}
+.google-btn picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1%;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 2px;
+}
+.google-btn picture img{        
+    width: 1.1rem;
+    height: 1.1rem;
+    background: white;
+    border-radius: 2px;
+    align-items: center;
+    display: flex;
+    margin-left: 1%;
+}
+.twitter-btn{
+    border: none;
+    width: 2.9rem;
+    height: 2.4rem;
+    margin-left: 0.8rem;
+    border-radius: 5px;
+}
+.twitter-btn picture img{
+    width: 30%;
+}
